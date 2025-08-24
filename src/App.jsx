@@ -7,7 +7,7 @@ import Catagories from './components/Catagoeries';
 import AboutUs from './components/AboutUs';
 import Count from './components/Counting';
 import GallerySection from './components/GallerySection';
-import IncludesSection from './components/IncludeSection/IncluesSection';
+import IncludeSection from './components/IncludeSection/IncludeSection';
 import CallToAction from './components/CallAction';
 import Footer from './components/Footer';
 import TestimonialsSection from './components/Testimonials';
@@ -35,7 +35,7 @@ function App() {
         <Route path="/Gallery" element={<GallerySection/>} />
         <Route path="/Our-Services" element={<ServicesSection/>} />
         <Route path="/Counting-Section" element={<Count/>} />
-         <Route path="/Includes-Section" element={<IncludesSection />} />
+         <Route path="/Include-Section" element={<IncludeSection />} />
         <Route path="/Call-To-Action" element={<CallToAction/>} />
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/Footer" element={<Footer/>} />

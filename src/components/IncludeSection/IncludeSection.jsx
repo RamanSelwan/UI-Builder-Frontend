@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Plus, Trash2 } from "lucide-react"
 import TextInput from "./TextInput"
-import FileUpload from "./Fileupload"
+import FileUpload from "./FileUpload"
 import SidebarLayout from "../Sidebar"
 import ColorPicker from "../ColorPicker"
 import FontSelector from "../FontSelector"
@@ -89,7 +89,7 @@ const StyledTextInput = ({
   </div>
 );
 
-const IncludesSection = () => {
+const IncludeSection = () => {
   const [formData, setFormData] = useState({
     topTitle: "HAIR SALON, MASSAGES, BEAUTY SALON",
     heading: "Find a service close to you",
@@ -217,7 +217,7 @@ const IncludesSection = () => {
       } else {
         alert(data.message || "Failed to save.")
       }
-    } catch (err) {
+    } catch (error) {
       alert("Error saving includes section.")
     }
   }
@@ -226,7 +226,7 @@ const IncludesSection = () => {
     <SidebarLayout>
     <div className="p-6">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Includes Section</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Include Section</h1>
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium"
           onClick={handleSave}
@@ -369,4 +369,4 @@ const IncludesSection = () => {
   )
 }
 
-export default IncludesSection
+export default IncludeSection
