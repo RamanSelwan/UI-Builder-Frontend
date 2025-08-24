@@ -16,7 +16,7 @@ import ServicesSection from './components/OurServices/ServicesSection';
 import ServiceCardView from './components/GetInTouch';
 import Dash from './components/Dash';
 import Blog from './components/Blog';
-import MainPanel from './components/main-panel/mainPanel';
+import MainPanel from './components/main-panel/MainPanel';
 import Sign from './components/userdetail/Sign';
 import Login from './components/userdetail/Login';
 
