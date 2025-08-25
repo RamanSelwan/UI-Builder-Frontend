@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { FiMail } from 'react-icons/fi';
-import { getApiEndpoint } from '../APIConnect';
+import { fetchWithTimeout } from '../APIConnect';
 
 const CallToAction = () => {
   const [callData, setCallData] = useState(null);
 
   useEffect(() => {
-    fetch(getApiEndpoint('call_action'))
+   fetchWithTimeout('call_action')
       .then(res => res.json())
       .then(data => {
         if (data.success && data.data) setCallData(data.data);
